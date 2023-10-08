@@ -23,30 +23,16 @@ import sys
 #
 
 def climbingLeaderboard(ranked, player):
-    player_ranking = []
+    temp_ranked = ranked
+    player_rankings = []
     for player_score in player:
-        new_ranked = []
-        n = len(ranked)
-        player_score_added = False
-        i = 0
-        while i < n:
-            if ranked[i] <= player_score and player_score_added == False:
-                new_ranked.append(player_score)
-                player_score_added = True
-                i -= 1
-            else:
-                new_ranked.append(ranked[i])
-            
-            i += 1
+        temp_ranked.append(player_score)
+        temp_ranked = set(temp_ranked)
+        temp_ranked = list(sorted(temp_ranked, reverse=True))
+        player_ranking = temp_ranked.index(player_score) + 1
+        player_rankings.append(player_ranking)
 
-        # The player score is the smallest and will be appended at the end
-        if player_score_added == False:
-            new_ranked.append(player_score)
-
-        ranked = new_ranked
-    
-    return ranked
-
+    return player_rankings
 
 if __name__ == '__main__':
 
@@ -62,6 +48,7 @@ if __name__ == '__main__':
     player = [5, 25, 50, 120]
 
     result = climbingLeaderboard(ranked, player)
+    print(result)
 
     # print('\n'.join(map(str, result)))
     # print('\n')
