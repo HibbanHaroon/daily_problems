@@ -1,5 +1,6 @@
 """
 An arcade game player wants to climb to the top of the leaderboard and track their ranking. The game uses Dense Ranking, so its leaderboard works like this:
+
 The player with the highest score is ranked number 1 on the leaderboard.
 Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number. 
 """
@@ -22,30 +23,20 @@ import sys
 #
 
 def climbingLeaderboard(ranked, player):
-    player_ranking = []
+    player_rankings = []
+    ranked = list(set(ranked))
+    ranked = sorted(ranked, reverse=True)
+
+    # Since the player array is in ascending order, we'll check if the player score can be placed at the end of the ranked array
+    # If not then pop the last element in the ranked array. 
+    # If you have found that the player score can be inserted at the end of the ranked array, 
+    # then the length of the array + 1 will be the rank of the player score (plus one because the score will go after the current array)
     for player_score in player:
-        new_ranked = []
-        n = len(ranked)
-        player_score_added = False
-        i = 0
-        while i < n:
-            if ranked[i] <= player_score and player_score_added == False:
-                new_ranked.append(player_score)
-                player_score_added = True
-                i -= 1
-            else:
-                new_ranked.append(ranked[i])
+        while ranked and player_score >= ranked[-1]:
+            ranked.pop()
+        player_rankings.append(len(ranked) + 1)
 
-            i += 1
-
-        # The player score is the smallest and will be appended at the end
-        if player_score_added == False:
-            new_ranked.append(player_score)
-
-        ranked = new_ranked
-
-    return ranked
-
+    return player_rankings
 
 if __name__ == '__main__':
 
@@ -61,11 +52,12 @@ if __name__ == '__main__':
     # player = [5, 25, 50, 120]
 
     result = climbingLeaderboard(ranked, player)
+    print(result)
 
-    print('\n'.join(map(str, result)))
-    print('\n')
+    # print('\n'.join(map(str, result)))
+    # print('\n')
 
 
 """ 
-The code for now is returning the final ranked list. But, I haven't added the logic of finding the rankings from this list.
+Since my code wasn't passing some test cases due to time complexity, I took inspiration from a solution I found on Hackerrank forum.
 """

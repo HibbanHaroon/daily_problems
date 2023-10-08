@@ -1,5 +1,6 @@
 """
 An arcade game player wants to climb to the top of the leaderboard and track their ranking. The game uses Dense Ranking, so its leaderboard works like this:
+
 The player with the highest score is ranked number 1 on the leaderboard.
 Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number. 
 """
@@ -35,7 +36,7 @@ def climbingLeaderboard(ranked, player):
                 i -= 1
             else:
                 new_ranked.append(ranked[i])
-
+            
             i += 1
 
         # The player score is the smallest and will be appended at the end
@@ -43,7 +44,7 @@ def climbingLeaderboard(ranked, player):
             new_ranked.append(player_score)
 
         ranked = new_ranked
-
+    
     return ranked
 
 
@@ -67,5 +68,5 @@ if __name__ == '__main__':
 
 
 """ 
-The code for now is returning the final ranked list. But, I haven't added the logic of finding the rankings from this list.
+This code isn't passing all the test cases due to time being exceeded
 """
