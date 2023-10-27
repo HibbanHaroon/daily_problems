@@ -45,3 +45,4 @@ Welcome to my daily problem-solving journey as I embark on a quest to complete 1
 | 16hr | 34. [viral_advertising.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/16hr/34.%20viral_advertising.py)  |  |
 |  | 35. [save_the_prisoner.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/16hr/35.%20save_the_prisoner.py)  | The problem is solved but not all the test cases are being passed due to time complexity.  |
 | 17hr | 35. [save_the_prisoner.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/17hr/35.%20save_the_prisoner.py)  | I was using a loop in the previous solution. I thought of a better solution without the need for a loop which solved the problem. |
+| 18hr | 36. [circular_array_rotation.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/18hr/36.%20circular_array_rotation.py)  | Pretty good problem. Rotating the array without any loop was pretty challenging. |
