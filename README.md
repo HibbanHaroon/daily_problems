@@ -1,3 +1,4 @@
+// prettier-ignore
 # Daily Problems - 100 Hrs 🚀
 
 Welcome to my daily problem-solving journey as I embark on a quest to complete 100 Hrs of coding problems daily! 🎉 Every day, I dedicate 1 hour to solving coding problems, and I'll be sharing my progress and learning here. 
@@ -48,3 +49,6 @@ Welcome to my daily problem-solving journey as I embark on a quest to complete 1
 | 18hr | 36. [circular_array_rotation.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/18hr/36.%20circular_array_rotation.py)  | Pretty good problem. Rotating the array without any loop was pretty challenging. |
 | 19hr | 37. [sequence_equation.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/19hr/37.%20sequence_equation.py)  |  |
 |  | 38. [jumping_on_the_clouds.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/19hr/38.%20jumping_on_the_clouds.py)  |  |
+| 20hr | 39. [find_digits.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/39.%20find_digits.py)  | Using a lamba function was really interesting to iterate over a number ```number = [int(char) for char in str(n)]``` . Another thing you gotta be mindful about is ZeroDivisionError, the error you get when dividing 0 or taking a modulus. |
+|  | 40. [extra_long_factorials.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/40.%20extra_long_factorials.py)  | This problem is mainly designed for C++, C, etc. There is no issue at all in dealing with big numbers in Python.  | 
+|  | 41. [append_and_delete.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/41.%20append_and_delete.py)  | The description of this problem was so bad. I'm really not proud of what I wrote and I think there might be a loophole in my code but it is what it is, it is 5 in the morning and I haven't slept. | 
