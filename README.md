@@ -1,4 +1,3 @@
-// prettier-ignore
 # Daily Problems - 100 Hrs 🚀
 
 Welcome to my daily problem-solving journey as I embark on a quest to complete 100 Hrs of coding problems daily! 🎉 Every day, I dedicate 1 hour to solving coding problems, and I'll be sharing my progress and learning here. 
@@ -52,3 +51,5 @@ Welcome to my daily problem-solving journey as I embark on a quest to complete 1
 | 20hr | 39. [find_digits.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/39.%20find_digits.py)  | Using a lamba function was really interesting to iterate over a number ```number = [int(char) for char in str(n)]``` . Another thing you gotta be mindful about is ZeroDivisionError, the error you get when dividing 0 or taking a modulus. |
 |  | 40. [extra_long_factorials.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/40.%20extra_long_factorials.py)  | This problem is mainly designed for C++, C, etc. There is no issue at all in dealing with big numbers in Python.  | 
 |  | 41. [append_and_delete.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/20hr/41.%20append_and_delete.py)  | The description of this problem was so bad. I'm really not proud of what I wrote and I think there might be a loophole in my code but it is what it is, it is 5 in the morning and I haven't slept. | 
+| 21hr | 42. [sherlock_and_squares.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/21hr/42.%20sherlock_and_squares.py)  | Such an interesting problem. In my first try, I learnt how to check if a number has decimal points or not... ```if num == math.ceil(num)``` just mentioning this here. My first try wasn't passing all the test cases due to time complexity. Then, I found how you could calculate how many squares there are within a range mathematically. It was a good experience doing this problem. One of my favorite problems I solved here. | 
+|  | 43. [library_fine.py](https://github.com/HibbanHaroon/daily_problems/blob/main/Hackerrank/21hr/43.%20library_fine.py)  | My takeaway for this problem was I got to learn how to breakdown a problem in chunks to solve it as a whole. | 
