@@ -15,6 +15,7 @@ import os
 import random
 import re
 import sys
+from itertools import combinations
 
 #
 # Complete the 'nonDivisibleSubset' function below.
@@ -24,19 +25,28 @@ import sys
 #  1. INTEGER k
 #  2. INTEGER_ARRAY s
 #
-
 def nonDivisibleSubset(k, s):
-    non_divisible = []
-    
-    for i, _ in enumerate(s):
-        for j, _ in enumerate(s, i + 1):
-            if j < len(s): # This condition will ensure that j doesn't go out of range
-                if (s[i] + s[j]) % k != 0:
-                    non_divisible.extend([s[i], s[j]]) #extends add multiple elements to a list but it takes a list, set or tuple as arguments.
-    
-    non_divisible = set(non_divisible)
+    largest_subset = 2
 
-    return len(non_divisible)
+    arrays = []
+    for i in range(2, len(s) + 1):
+        arrays.append(list(combinations(s, i)))
+
+    print(list(arrays))
+
+    for arr in list(arrays):
+        for subset in arr:
+            tuples = combinations(subset, 2)
+            is_largest_subset = True
+        
+            for tup in list(tuples):
+                if (tup[0] + tup[1]) % k == 0:
+                    is_largest_subset = False
+            
+            if is_largest_subset == True:
+                largest_subset = len(subset)
+    
+    return largest_subset
 
 if __name__ == '__main__':
 
