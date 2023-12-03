@@ -11,11 +11,8 @@ digits = {
 }
 
 calibrated_document = []
-# calibration_document = ["21xfxfourmzmqbqp1four"]
-# calibration_document = ["85three"]
 
-
-f = open('D:/Coding/Daily Problems/AdventOfCode/2023/Day1-PartTwo/file2.txt', 'r')
+f = open('D:/Coding/Daily Problems/AdventOfCode/2023/Day1-PartOne/file.txt', 'r')
 
 for text in f.readlines():
     indexes_dict = {}
@@ -50,8 +47,6 @@ for text in f.readlines():
                 temp_list.append(index)
                 indexes_dict[int(char)] = temp_list
 
-    # print(indexes_dict)
-
     indexes_list = []
 
     for lists in indexes_dict.values():
@@ -75,27 +70,6 @@ for text in f.readlines():
     else:
         calibration_value = (10 * calibration_value) + calibration_value
 
-    # print(calibration_value)
-
     calibrated_document.append(calibration_value)
 
 print(sum(calibrated_document))
-
-# for text in f.readlines():
-#     calibration_value = None
-#     temp = None
-
-#     for char in text:
-#         if calibration_value == None and char.isnumeric() == True:
-#             calibration_value = int(char)
-#         elif char.isnumeric() == True:
-#             temp = int(char)
-
-#     if temp != None:
-#         calibration_value = (10 * calibration_value) + temp
-#     else:
-#         calibration_value = (10 * calibration_value) + calibration_value
-
-#     calibrated_document.append(calibration_value)
-
-# print(sum(calibrated_document))
