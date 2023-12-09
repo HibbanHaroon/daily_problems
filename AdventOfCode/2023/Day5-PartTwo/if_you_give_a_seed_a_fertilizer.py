@@ -27,7 +27,7 @@ for seed in seeds_arr:
         s2 = temp_seeds[1]
         seeds.append((s1, s2))
 
-        temp_seeds.clear
+        temp_seeds.clear()
         count = 0
 
 data.pop(0)
